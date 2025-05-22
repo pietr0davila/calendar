@@ -1,11 +1,17 @@
 @charset "UTF-8";
 
+:root {
+    --blue:  rgb(3, 86, 210);
+    --background: #eeeeee;
+
+}
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 body {
+    background-color: var(--background);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -19,10 +25,11 @@ header {
     text-align: center;
     margin: 3rem;
 }
-h1 {
+h1 {    
+    color: var(--blue);
     font-size: 3rem;
 }
-div {
+.content {
     display: flex;
     flex-wrap: wrap;
     margin: 1rem;
@@ -38,6 +45,11 @@ div {
     transform: scale(1.1);
 }
 table, td, th, tr {
+    border: 2px solid;
+    border-color: black;
     margin: 2rem;
     padding: 5px;
+}
+th {
+    color: var(--blue);
 }
